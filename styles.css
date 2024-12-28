@@ -1,0 +1,55 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    color: rgb(219, 211, 211);
+    text-align: center;
+    padding: 50px;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.heart {
+    display: inline-block;
+    animation: heartbeat 1.5s infinite;
+}
+
+.heart img {
+    width: 200px; /* Atur ukuran gambar sesuai kebutuhan */
+    height: auto; /* Menjaga rasio aspek gambar */
+}
+
+@keyframes heartbeat {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.button {
+    display: inline-block;
+    background-color: white;
+    color: #ff7e5f;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #ff7e5f;
+    color: white;
+}
